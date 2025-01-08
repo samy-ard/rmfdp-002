@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact | your name</title>
+</head>
+<body>
+	<style>
+		* { box-sizing: border-box; transition: all 0.3s ease }
+		body { font-family: 'Arial', sans-serif; margin: 0; }
+		h1, h2, h3, h4, h5, h6 { margin: 0 0 20px }
+		h1 { font-size: 60px }
+		h2 { font-size: 32px }
+		h3 { font-size: 28px }
+		a { text-decoration: none }
+		p { margin: 0 0 20px }
+		blockquote { margin: 0 }
+		cite { font-style: normal; color: #cccccc; font-weight: bold }
+		.cursive { font-family: cursive }
+		.text-center { text-align: center }
+		.container { margin: 0 auto; max-width: 1210px }
+		.brand, .menu, .row { display: flex; flex-wrap: wrap;}
+		.flex-apart { justify-content: space-between; }
+		.flex-center { align-items: center; }
+		.col-auto { flex: 0 0 auto; }
+		.col { flex: 1 0 0;	}
+		.menu { padding: 0; list-style: none; column-gap: 15px }
+		.menu li:not(:first-child)::before { content: '/'; margin-right: 15px }
+		.menu-alt { padding: 0; list-style: none; }
+		.menu-alt li { padding: 10px 44px }
+		.menu-alt li:not(:first-child) { border-top: 2px solid black }
+		.menu li a, .menu-alt li a { color: black; }
+		.menu li a:hover, .menu-alt li a:hover { color: #3a85ca; }
+		.list-alt { padding: 0; list-style-type: none; }
+		.list-alt li::before { content: '-'; margin-right: 8px };
+		.text-blue { color: #3a85ca; }
+		.site { margin: 26px auto; max-width: 1306px; border: 3px solid black; }
+		header { padding: 22px 0; font-size: 28px}
+		.brand { column-gap: 18px; font-size: 32px  }
+		.logo { display: block; background-color: black;  width: 48px; height: 48px; border-radius: 8px }
+		.banner { padding: 72px 0 }
+		.banner-title { font-size: 60px; line-height: 1; font-weight: normal; }
+		.banner-desc { font-size: 28px; color: #868e96 }
+		.info { border-top: 3px solid black; border-bottom: 3px solid black; font-size: 24px }
+		.info .section-title { margin-top: 30px; }
+		.info form { padding: 40px 0; }
+		input, button, textarea { appearance: none; display: block; width: 100%; border: 3px solid black; font-family: sans-serif; font-size:20px; line-height: 1.25; padding: 20px 30px; margin-bottom: 30px; border-radius: 8px }
+		input:focus, textarea:focus { outline: none; border-color: #3a85ca }
+		button { cursor: pointer; font-weight: bold; width: fit-content; }
+		button:hover, button:focus { color: white; background-color: #3a85ca; border-color: #3a85ca; }
+		footer { padding: 100px 0; }
+		.copyright { font-size: 28px; margin: 0 }
+	</style>
+	<div class="site">
+		<header>
+			<div class="container">
+				<div class="row flex-apart flex-center">
+					<div class="col-auto brand">
+						<span class="logo"></span>
+						<span>your name</span>
+					</div>
+					<nav class="col-auto navbar">
+						<ul class="menu">
+							<li><a href="./index.html">Home</a></li>
+							<li><a href="./projects.html">Projects</a></li>
+							<li><a href="./articles.html">Articles</a></li>
+							<li><a href="./contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="banner">
+				<div class="container text-center">
+					<h1 class="banner-title cursive">Contact</h1>
+					<p class="banner-desc">html only with proper layout, no styling</p>
+				</div>
+			</section>
+			<section class="info">
+				<div class="container">
+					<form>
+						<input type="text" name="_name" placeholder="Enter your name">
+						<input type="email" name="_email" placeholder="Enter your email">
+						<textarea placeholder="Write here your message..." rows="5"></textarea>
+						<button type="submit">Submit</button>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="cursive text-center">
+			<div class="container">
+				<p class="copyright">&copy; all rights reserved 2025</p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

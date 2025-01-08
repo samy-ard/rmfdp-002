@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home | your name</title>
+</head>
+<body>
+	<style>
+		* { box-sizing: border-box; }
+		body { font-family: 'Arial', sans-serif; margin: 0; }
+		h1, h2, h3, h4, h5, h6 { margin: 0 0 20px }
+		h1 { font-size: 60px }
+		h2 { font-size: 32px }
+		h3 { font-size: 28px }
+		a { text-decoration: none }
+		p { margin: 0 0 20px }
+		blockquote { margin: 0 }
+		cite { font-style: normal; color: #cccccc; font-weight: bold }
+		.cursive { font-family: cursive }
+		.text-center { text-align: center }
+		.container { margin: 0 auto; max-width: 1210px }
+		.brand, .menu, .row { display: flex; flex-wrap: wrap;}
+		.flex-apart { justify-content: space-between; }
+		.flex-center { align-items: center; }
+		.col-auto { flex: 0 0 auto; }
+		.col { flex: 1 0 0;	}
+		.menu { padding: 0; list-style: none; column-gap: 15px }
+		.menu li:not(:first-child)::before { content: '/'; margin-right: 15px }
+		.menu-alt { padding: 0; list-style: none; }
+		.menu-alt li { padding: 10px 44px }
+		.menu-alt li:not(:first-child) { border-top: 2px solid black }
+		.menu li a, .menu-alt li a { color: black; }
+		.menu li a:hover, .menu-alt li a:hover { color: #3a85ca; }
+		.list-alt { padding: 0; list-style-type: none; }
+		.list-alt li::before { content: '-'; margin-right: 8px };
+		.text-blue { color: #3a85ca; }
+		.site { margin: 26px auto; max-width: 1306px; border: 3px solid black; }
+		header { padding: 22px 0; font-size: 28px}
+		.brand { column-gap: 18px; font-size: 32px  }
+		.logo { display: block; background-color: black;  width: 48px; height: 48px; border-radius: 8px }
+		.banner { padding: 72px 0 }
+		.banner-title { font-size: 60px; line-height: 1; font-weight: normal; }
+		.banner-desc { font-size: 28px; color: #868e96 }
+		.info { border-top: 3px solid black; font-size: 24px }
+		.info-projects { max-width: 360px;  }
+		.info-projects, .info-experience { border-right: 3px solid black }
+		.info-education { padding: 0 34px; max-width: 440px }
+		.info .section-title { margin-top: 30px; }
+		.info-projects .section-title { padding-left: 44px }
+		.info-experience .section-title { padding-left: 34px }
+		.feature { padding: 28px 34px; }
+		.feature:not(:last-child) { border-bottom: 3px solid black }
+		.feature > * { line-height: 1 }
+		.reviews { padding: 40px 0; border-top: 3px solid black; font-size:24px }
+		.reviews .row { column-gap: 36px; }
+		.review { border: 3px solid black; border-radius: 32px; padding: 40px 26px 50px;	}
+		footer { padding: 100px 0; }
+		.review blockquote { margin-bottom: 15px }
+		.copyright { font-size: 28px; margin: 0 }
+	</style>
+	<div class="site">
+		<header>
+			<div class="container">
+				<div class="row flex-apart flex-center">
+					<div class="col-auto brand">
+						<span class="logo"></span>
+						<span>your name</span>
+					</div>
+					<nav class="col-auto navbar">
+						<ul class="menu">
+							<li><a href="./index.html">Home</a></li>
+							<li><a href="./projects.html">Projects</a></li>
+							<li><a href="./articles.html">Articles</a></li>
+							<li><a href="./contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="banner">
+				<div class="container text-center">
+					<h1 class="banner-title cursive">Frontend Developer</h1>
+					<p class="banner-desc">html only with proper layout, no styling</p>
+				</div>
+			</section>
+			<section class="info">
+				<div class="row">
+					<div class="col info-projects">
+						<h3 class="section-title cursive">Projects</h3>
+						<nav class="menu-alt">
+							<li><a href="#">HTML Only Portfolio</a></li>
+							<li><a href="#">Calculator</a></li>
+							<li><a href="#">Quizz App</a></li>
+							<li><a href="#">Countdown Timer</a></li>
+							<li><a href="#">Product Upcoming Page</a></li>
+						</nav>
+					</div>
+					<div class="col info-experience">
+						<h3 class="section-title cursive">Work Experience</h3>
+						<div class="feature">
+							<h4 class="cursive">roadmap.sh</h4>
+							<p>Solved all the frontend projects</p>
+							<a href="#" class="text-blue">Visit my Profile</a>
+						</div>
+						<div class="feature">
+							<h4 class="cursive">OpenSource Work</h4>
+							<p>Contributed to 50 opensource projects. Made my own projects with 200 GitHub Stars.</p>
+							<a href="#" class="text-blue">Visit my GitHub Profile</a>
+						</div>
+					</div>
+					<div class="col info-education">
+						<h3 class="section-title cursive">Education</h3>
+						<p>Graduated with 3.76 out 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
+						<p>Courses I took:</p>
+						<ul class="list-alt">
+							<li>Object Oriented Programming</li>
+							<li>Data Structures and Algorithms</li>
+							<li>Web Engineering</li>
+							<li>Artificial Intelligence</li>
+							<li>Human Computer Interaction</li>
+							<li>Computer Graphics</li>
+							<li>Database Management Systems</li>
+							<li>Distributed Database Systems</li>
+							<li>Discreet Mathematics</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="reviews">
+				<div class="container">
+					<h3 class="section-title cursive">Reviews from my Teachers</h3>
+					<div class="row">
+						<div class="col review">
+							<blockquote>John Doe was a brilliant student; always stood out with his assignments.</blockquote>
+							<cite>Jane Doe <br> Assistant Professor</cite>
+						</div>
+						<div class="col review">
+							<blockquote>John Doe was a brilliant student; always stood out with his assignments.</blockquote>
+							<cite>Jane Doe <br> Assistant Professor</cite>
+						</div>
+						<div class="col review">
+							<blockquote>John Doe was a brilliant student; always stood out with his assignments.</blockquote>
+							<cite>Jane Doe <br> Assistant Professor</cite>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="cursive text-center">
+			<div class="container">
+				<p class="copyright">&copy; all rights reserved 2025</p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
